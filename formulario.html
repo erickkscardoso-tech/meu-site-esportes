@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Formulário</title>
+
+<!-- FONTE -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- CABEÇALHO -->
+<header>
+
+    <img src="imagens/logo do site.png"
+         alt="Logo do site"
+         class="logo">
+
+
+    <div class="conteudo-cabecalho">
+
+        <h1>Meu Formulário</h1>
+
+        <p>
+            Conheça, descubra e apaixone-se por diferentes modalidades esportivas.
+        </p>
+
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">Início</a>
+
+        <a href="esportes.html">Esportes</a>
+
+        <a href="formulario.html">Formulário</a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- FORMULÁRIO -->
+<main class="caixa-formulario">
+
+    <h1>Formulário</h1>
+
+    <p class="descricao-formulario">
+        Preencha os campos abaixo para entrar em contato.
+    </p>
+
+
+    <form>
+
+
+        <label for="nome">
+            Nome completo
+        </label>
+
+        <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Digite seu nome completo"
+            required
+        >
+
+
+        <label for="nascimento">
+            Data de nascimento
+        </label>
+
+        <input
+            type="date"
+            id="nascimento"
+            name="nascimento"
+            required
+        >
+
+
+        <label for="telefone">
+            Telefone
+        </label>
+
+        <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            placeholder="(00) 00000-0000"
+            required
+        >
+
+
+        <label for="email">
+            E-mail
+        </label>
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="seuemail@email.com"
+            required
+        >
+
+
+        <label for="mensagem">
+            Mensagem
+        </label>
+
+        <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="6"
+            placeholder="Digite sua mensagem..."
+            required
+        ></textarea>
+
+
+        <button type="submit">
+            Enviar formulário
+        </button>
+
+    </form>
+
+</main>
+
+
+
+<!-- RODAPÉ -->
+<footer>
+
+    <p>
+        © 2026 - Projeto de Esportes
+    </p>
+
+</footer>
+
+</body>
+
+</html>

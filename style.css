@@ -1,0 +1,862 @@
+/* RESET */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* PÁGINA */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #050505;
+    color: white;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    height: 140px;
+    padding: 08%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #080808;
+    border-bottom: 1px solid #222;
+}
+
+header h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-left: 120px;
+}
+
+
+/* NAVEGAÇÃO */
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00bfff;
+}
+
+
+/* INÍCIO */
+
+.inicio {
+    position: relative;
+    width: calc(100% - 100px);
+    height: 600px;
+    margin: 50px auto;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 25px;
+}
+
+.fundo-esportes {
+    position: absolute;
+    inset: -20px;
+    background-image: url("Imagens/esportes-fundo.png");
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(0px);
+}
+
+.conteudo-inicio {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.conteudo-inicio h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 3px 10px black;
+}
+
+.conteudo-inicio p {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 7px black;
+}
+
+.conteudo-inicio a {
+    display: inline-block;
+    padding: 12px 25px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* MENU DOS ESPORTES */
+
+
+
+.menu-esportes h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+  color: #999;
+  margin-bottom: 90px;
+  text-align:left;
+  margin-left: 325px;
+}
+
+
+/* IMAGEM */
+
+.imagem-esportes {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.imagem-esportes img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover
+}
+
+
+/* ÁREAS CLICÁVEIS */
+
+.area {
+    position: absolute;
+
+    top: 0;
+    height: 100%;
+
+    display: block;
+    z-index: 2;
+}
+
+
+/* EFEITO AO PASSAR O MOUSE */
+
+
+
+/* SOBRE */
+
+.sobre {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #0a0a0a;
+}
+
+.sobre h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    max-width: 700px;
+    margin: auto;
+    color: #aaa;
+    line-height: 1.7;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #050505;
+    color: #777;
+}
+
+/* MENU DOS ESPORTES */
+
+.menu-esportes {
+    padding: 50px 6%;
+    text-align: center;
+}
+
+
+/* BASQUETE */
+
+.basquete {
+    left: 0%;
+    width: 33.33%;
+}
+
+/* VÔLEI */
+.volei {
+    left: 33.33%;
+    width: 33.33%;
+}
+
+/* FUTEBOL */
+.futebol {
+    left: 66.66%;
+    width: 33.34%;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+
+
+ .logo{
+    width: 400px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.logo {
+    position: relative;
+    top: 6px;
+}
+
+
+.logo {
+  margin-left: -80px;
+}
+
+.textos {
+  text-align: center;
+}
+
+.textos h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.textos p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.botoes-esportes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.botoes-esportes a {
+    width: 150px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #b80710;
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+}
+
+.botoes-esportes a:hover {
+    background-color: #8f050c;
+    transform: scale(1.05);
+}
+
+/* ÁREA DO ESPORTE */
+.info-esporte {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    padding: 50px;
+}
+
+/* TEXTO */
+.texto-esporte {
+    width: 400px;
+    text-align: center;
+}
+
+.texto-esporte h1 {
+    font-size: 100px;
+    margin-bottom: 25px;
+}
+
+.texto-esporte p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* IMAGEM */
+.imagem-esporte {
+    width: 500px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.historia-basquete {
+    text-align: center;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.historia-basquete h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.historia-basquete p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.minha-trajetoria-no-basquete {
+    max-width: 1100px;
+    margin: 200px auto 150px;
+    text-align: center;
+}
+
+.minha-trajetoria-no-basquete h2 {
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+.trajetoria-basquete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.texto-trajetoria-basquete {
+    width: 500px;
+    text-align: center;
+}
+
+.texto-trajetoria-basquete p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.imagem-trajetoria-basquete {
+    width: 500px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* HISTÓRIA DO FUTEBOL */
+
+.historia-futebol {
+    max-width: 800px;
+    margin: 100px auto 100px;
+    text-align: center;
+}
+
+.historia-futebol h2 {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.historia-futebol p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+
+/* MINHA TRAJETÓRIA NO FUTEBOL */
+
+.minha-trajetoria-no-futebol {
+    max-width: 1100px;
+    margin: 200px auto 150px;
+    text-align: center;
+}
+
+.minha-trajetoria-no-futebol h2 {
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+.trajetoria-futebol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.texto-trajetoria-futebol {
+    width: 500px;
+    text-align: center;
+}
+
+.texto-trajetoria-futebol p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.imagem-trajetoria-futebol {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* HISTÓRIA DO VÔLEI */
+
+.historia-volei {
+    max-width: 800px;
+    margin: 150px auto 100px;
+    text-align: center;
+}
+
+.historia-volei h2 {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.historia-volei p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+
+/* MINHA TRAJETÓRIA NO VÔLEI */
+
+/* MINHA TRAJETÓRIA NO VÔLEI */
+
+.minha-trajetoria-no-volei {
+    max-width: 1100px;
+    margin: 200px auto 150px;
+    text-align: center;
+}
+
+.minha-trajetoria-no-volei h2 {
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+.trajetoria-volei {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.texto-trajetoria-volei {
+    width: 500px;
+    text-align: center;
+}
+
+.texto-trajetoria-volei p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.imagem-trajetoria-volei {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    background-color: #0b1f3a;
+}
+
+header nav a {
+    color: black;
+    font-weight: bold;
+}
+
+main {
+    background-color: #1a1a1a;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+header nav a {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.caixa-inicio {
+    background-color: #1a1a1a;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.conteudo-cabecalho {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conteudo-cabecalho h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.conteudo-cabecalho p {
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.conteudo-cabecalho a {
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.caixa-formulario {
+    background-color: #1a1a1a;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.caixa-formulario h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.descricao-formulario {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.caixa-formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa-formulario label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.caixa-formulario input,
+.caixa-formulario textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 25px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+
+    box-sizing: border-box;
+}
+
+.caixa-formulario textarea {
+    resize: vertical;
+}
+
+.caixa-formulario button {
+    width: 200px;
+    padding: 14px;
+
+    margin: 10px auto 0;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #b80710;
+    color: white;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.caixa-formulario button:hover {
+    background-color: #8f050c;
+    transform: scale(1.05);
+}
+
+.caixa-mapa {
+    background-color: #1a1a1a;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.caixa-mapa h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.caixa-mapa > p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.mapa {
+    width: 100%;
+    margin-top: 35px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.mapa iframe {
+    display: block;
+}
+
+.endereco-mapa {
+    margin-top: 30px;
+}
+
+.endereco-mapa h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* ========================= */
+/* RESPONSIVIDADE - CELULAR */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    /* CABEÇALHO */
+    header {
+        height: auto;
+        min-height: 80px;
+        padding: 15px 20px;
+
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        width: 60px;
+        height: auto;
+    }
+
+    .conteudo-cabecalho {
+        text-align: center;
+    }
+
+    .conteudo-cabecalho h1 {
+        font-size: 25px;
+    }
+
+    .conteudo-cabecalho p {
+        font-size: 14px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+
+    /* PÁGINA INICIAL */
+
+    .inicio {
+        height: 500px;
+        padding: 20px;
+    }
+
+    .conteudo-inicio {
+        width: 100%;
+        text-align: center;
+    }
+
+    .conteudo-inicio h1 {
+        font-size: 40px;
+    }
+
+    .conteudo-inicio p {
+        font-size: 16px;
+    }
+
+
+    /* BOTÕES DOS ESPORTES */
+
+    .botoes-esportes {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .botoes-esportes a {
+        width: 200px;
+    }
+
+
+    /* CONTEÚDO DOS ESPORTES */
+
+    .info-esporte {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .texto-esporte {
+        width: 100%;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .texto-esporte h1 {
+        font-size: 50px;
+    }
+
+    .imagem-esporte {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+
+    /* HISTÓRIA E TRAJETÓRIA */
+
+    .historia-basquete,
+    .historia-futebol,
+    .historia-volei,
+    .minha-trajetoria-no-basquete,
+    .minha-trajetoria-no-futebol,
+    .minha-trajetoria-no-volei {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .historia-basquete h2,
+    .historia-futebol h2,
+    .historia-volei h2,
+    .minha-trajetoria-no-basquete h2,
+    .minha-trajetoria-no-futebol h2,
+    .minha-trajetoria-no-volei h2 {
+        font-size: 30px;
+    }
+
+    .historia-basquete p,
+    .historia-futebol p,
+    .historia-volei p,
+    .minha-trajetoria-no-basquete p,
+    .minha-trajetoria-no-futebol p,
+    .minha-trajetoria-no-volei p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
+    /* FORMULÁRIO */
+
+    .caixa-formulario {
+        width: 90%;
+        margin: 30px auto;
+        padding: 25px;
+    }
+
+    .caixa-formulario h1 {
+        font-size: 35px;
+    }
+
+    .caixa-formulario input,
+    .caixa-formulario textarea {
+        font-size: 16px;
+    }
+
+
+    /* MAPA */
+
+    .caixa-mapa {
+        width: 90%;
+        margin: 30px auto;
+        padding: 25px;
+    }
+
+    .caixa-mapa h1 {
+        font-size: 35px;
+    }
+
+    .mapa iframe {
+        height: 350px;
+    }
+
+
+    /* SOBRE */
+
+    .sobre {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .sobre h2 {
+        font-size: 32px;
+    }
+
+    .sobre p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
+    /* RODAPÉ */
+
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+
+}
